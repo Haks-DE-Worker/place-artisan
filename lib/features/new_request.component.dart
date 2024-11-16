@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-class PostsPage extends StatefulWidget {
-  const PostsPage({super.key});
+
+class NewRequestPage extends StatefulWidget {
+  const NewRequestPage({super.key});
 
   @override
-  State<PostsPage> createState() {
-    return _PostsPageState();
+  State<NewRequestPage> createState() {
+    return _NewRequestPageState();
   }
 }
 
-class _PostsPageState extends State<PostsPage> {
+class _NewRequestPageState extends State<NewRequestPage> {
 
   @override
   Widget build(BuildContext context) {
