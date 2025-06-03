@@ -1,7 +1,7 @@
 import 'package:artisan_mobile/features/artisans.component.dart';
 import 'package:artisan_mobile/features/new_request.component.dart';
-import 'package:artisan_mobile/features/posts.component.dart';
-import 'package:artisan_mobile/features/tarifs.component.dart';
+import 'package:artisan_mobile/features/login.component.dart';
+import 'package:artisan_mobile/features/register.component.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import '../common/constants/app_colors.dart';
@@ -26,10 +26,9 @@ class _PageContainerState extends State<PageContainer> {
   List<Widget> _buildPages() {
     return [
       const HomePage(),
-
       const ArtisansPage(),
-      const PostsPage(),
-      const TarifsPage(),
+      // const PostsPage(),
+      // const TarifsPage(),
       const MyRequestsPage(),
     ];
   }
@@ -66,7 +65,7 @@ class _PageContainerState extends State<PageContainer> {
       _menuTem(Icons.person_pin, "Mon compte"),
     ];
   }
-
+  
   PersistentBottomNavBarItem _menuTem(IconData icon, String text) {
     return PersistentBottomNavBarItem(
       icon: Icon(icon, size: 30),
